@@ -51,7 +51,7 @@ Users should be able to:
 
 ### What I learned
 
-####Creating a responsive perfume product card and uploading it to GitHub has been an enriching experience. Here are some key takeaways from the project:
+###Creating a responsive perfume product card and uploading it to GitHub has been an enriching experience. Here are some key takeaways from the project:
 
 - Responsive Design Principles: I gained a deeper understanding of responsive design, ensuring that the product card adapts seamlessly to different screen sizes and devices. This involved using CSS media queries and flexible 
   layouts to maintain usability and aesthetics across various platforms.
@@ -64,7 +64,7 @@ Users should be able to:
 
 - Version Control with GitHub: Uploading the project to GitHub reinforced my knowledge of version control. I learned how to manage code versions, collaborate with others, and showcase my work through GitHub repositories.
 
-To see how you can add code snippets, see below:
+### Here is the HTML Code that I created : 
 
 ```html
   <main>
@@ -88,6 +88,8 @@ To see how you can add code snippets, see below:
     </article>
   </main>
 ```
+
+### Here is the css code that I created
 ```css
 /* Custome Varibles */
 :root{
@@ -248,6 +250,20 @@ main{
      height: 16px;
      background-image: url(images/icon-cart.svg);
 }
+```
+
+### If you want to include fonts that I used to this project simply copy this code and paste inside your HTML file's Head tag :
+<head>
+  //Paste it here
+</head>
+
+```html
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&display=swap" rel="stylesheet">
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
