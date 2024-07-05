@@ -28,7 +28,11 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
+Desktop website looks like this
 ![alt text](https://github.com/Gagana999/Create-Product-Card/blob/main/design/desktop-design.jpg)
+
+Mobile website looks like this
+![alt text](https://github.com/Gagana999/Create-Product-Card/blob/main/design/mobile-design.jpg)
 
 ### Links
 
