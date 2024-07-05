@@ -27,80 +27,233 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-Desktop website looks like this
+### Desktop website looks like this
+
 ![alt text](https://github.com/Gagana999/Create-Product-Card/blob/main/design/desktop-design.jpg)
 
-Mobile website looks like this
+### Mobile website looks like this
+
 ![alt text](https://github.com/Gagana999/Create-Product-Card/blob/main/design/mobile-design.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Click me to go to live site](https://product-card-by-gagana.netlify.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- Make html structure
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Design desktop veiew
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+####Creating a responsive perfume product card and uploading it to GitHub has been an enriching experience. Here are some key takeaways from the project:
+
+- Responsive Design Principles: I gained a deeper understanding of responsive design, ensuring that the product card adapts seamlessly to different screen sizes and devices. This involved using CSS media queries and flexible 
+  layouts to maintain usability and aesthetics across various platforms.
+
+- HTML and CSS Proficiency: I honed my skills in HTML and CSS, learning how to structure the content and style it effectively. This project helped me understand the importance of semantic HTML for better accessibility and 
+  search engine optimization.
+
+- Flexbox and Grid Layouts: Implementing the layout using Flexbox and Grid significantly enhanced my ability to create complex and flexible designs. These CSS techniques allowed me to arrange elements dynamically and 
+  responsively.
+
+- Version Control with GitHub: Uploading the project to GitHub reinforced my knowledge of version control. I learned how to manage code versions, collaborate with others, and showcase my work through GitHub repositories.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+  <main>
+    <article class="product">
+      <picture>
+        <source srcset="images\image-product-desktop.jpg" media="(min-width: 700px)">
+        <img src="images/image-product-mobile.jpg" alt="perfume-product-icon">
+      </picture>
+
+      <div class="product-details">
+        <p class="product-category">Perfume</p>
+        <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product-description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+        <div class="prices">
+          <p class="product-price">$149.99</p>
+          <p class="product-original-price">$169.99</p>
+        </div>
+        <button class="add-to-cart-button" data-icon="shopping-cart">Add to Cart</button>
+      </div>
+    </article>
+  </main>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* Custome Varibles */
+:root{
+     --primary-400: hsl(158, 36%, 37%);
+     --primary-700: hsl(158, 36%, 17%);
+     --secondary-200: hsl(30, 38%, 92%);
+
+     --neutral-900: hsl(212, 21%, 14%);
+     --neutral-400: hsl(228, 12%, 48%);
+     --neutral-100: hsl(0, 0%, 100%);
+
+     --fw-regular: 500;
+     --fw-bold: 700;
+
+     --ff-accent: 'Fraunces', serif;
+     --ff-base: 'Montserrat', sans-serif;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+/* CSS Reste */
+
+*, *::before, *::after {
+     box-sizing: border-box;
+   }
+
+* {
+     margin: 0;
+}
+
+body {
+     line-height: 1.7;
+     -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+     display: block;
+     max-width: 100%;
+}
+
+input, button, textarea, select {
+     font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+     overflow-wrap: break-word;
+}
+
+#root, #__next {
+     isolation: isolate;
+}
+
+/* General CSS */
+body{
+     font-family: var(--ff-base);
+     font-weight: var(--fw-regular);
+     font-size: 0.875rem;
+     color: var(--neutral-400);
+     background-color: var(--secondary-200);
+}
+
+main{
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.product{
+     --gap: 1rem;
+     margin: 1rem;
+     background-color: var(--neutral-100);
+     border-radius: .5rem;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     max-width: 800px;
+}
+
+@media(min-width: 700px){
+     .product{
+          --gap: 2rem;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+     }
+     .product-details{
+          width: 90%;
+     }
+}
+
+.product-details{
+     margin: 2rem;
+     display: flex;
+     flex-direction: column;
+     gap: var(--gap);
+}
+
+.product-category{
+     text-transform: uppercase;
+     letter-spacing: 5px;
+}
+
+.product-title{
+     font-size: 2rem;
+     font-family: var(--ff-accent);
+     color: var(--neutral-900);
+     line-height: 1.1;
+     font-weight: var(--fw-bold);
+}
+
+.product-description{
+     font-size: .975rem;
+}
+
+.prices{
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     gap: var(--gap);
+}
+
+.prices .product-price{
+     color: var(--primary-400);
+     font-size: 2rem;
+     font-family: var(--ff-accent);
+     font-weight: var(--fw-bold);
+}
+
+.prices .product-original-price{
+     text-decoration: line-through;
+}
+
+.add-to-cart-button{
+     background-color: var(--primary-400);
+     color: var(--neutral-100);
+     border-radius: .5rem;
+     padding: 1rem 1.5rem;
+     border: none;
+     outline: none;
+     font-size: .875rem;
+     font-weight: var(--fw-bold);
+     transition: background 1s linear;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 0.5rem;
+}
+
+.add-to-cart-button:is(:hover, :active){
+     background-color: var(--primary-700);
+}
+
+.add-to-cart-button[data-icon="shopping-cart"]::before{
+     content: "";
+     width: 15px;
+     height: 16px;
+     background-image: url(images/icon-cart.svg);
 }
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Name - NBG.Rantharu
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Linkdin - [@Gagana Rantharu]([https://www.twitter.com/yourusername](https://www.linkedin.com/in/gagana-rantharu-01a7092b5/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B9ueXI8LiSHKzK3XAJMD4qw%3D%3D))
