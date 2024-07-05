@@ -268,5 +268,5 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 ## Author
 
 - Name - NBG.Rantharu
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Linkdin - [@Gagana Rantharu]([https://www.twitter.com/yourusername](https://www.linkedin.com/in/gagana-rantharu-01a7092b5/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B9ueXI8LiSHKzK3XAJMD4qw%3D%3D))
+- Frontend Mentor - [@gagana999](https://www.frontendmentor.io/profile/Gagana999)
+- Linkdin - [@Gagana](https://www.linkedin.com/in/gagana-rantharu-01a7092b5/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B9ueXI8LiSHKzK3XAJMD4qw%3D%3D)
