@@ -11,10 +11,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -51,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-###Creating a responsive perfume product card and uploading it to GitHub has been an enriching experience. Here are some key takeaways from the project:
+#### Creating a responsive perfume product card and uploading it to GitHub has been an enriching experience. Here are some key takeaways from the project:
 
 - Responsive Design Principles: I gained a deeper understanding of responsive design, ensuring that the product card adapts seamlessly to different screen sizes and devices. This involved using CSS media queries and flexible 
   layouts to maintain usability and aesthetics across various platforms.
